@@ -1,6 +1,8 @@
 # Juan's Learning Log
 A place to log my progress in learning new programming-related skills.
 
+A more detailed log of my daily progress can be found in the "TIL" doc: https://github.com/jvaz11/learning-log/blob/main/TIL.md
+
 ## Courses
 
 ### ui.dev - Learn React
