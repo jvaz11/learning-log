@@ -5,18 +5,18 @@ A place to log my progress in learning new programming-related skills.
 
 ### ui.dev - Learn React
 
-- [ ] The Road to Hello World
-- [ ] Passing Data to Components
-- [ ] Rendering Lists
-- [ ] Managing State
-- [ ] Functional Components
-- [ ] Validating Props with PropTypes
-- [ ] The Component Lifecycle
-- [ ] Handling Form State
-- [ ] Composition with children
-- [ ] Building Reusable Components
-- [ ] Code Sharing
-- [ ] Bypassing Props with Context
+- [x] The Road to Hello World
+- [x] Passing Data to Components
+- [x] Rendering Lists
+- [x] Managing State
+- [x] Functional Components
+- [x] Validating Props with PropTypes
+- [x] The Component Lifecycle
+- [x] Handling Form State
+- [x] Composition with children
+- [x] Building Reusable Components
+- [x] Code Sharing
+- [x] Bypassing Props with Context
 - [ ] React Router v4
 - [ ] Better Classes with Class Fields
 - [ ] Performance Gains with Code Splitting
