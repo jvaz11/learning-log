@@ -15,10 +15,10 @@ A more detailed log of my daily progress can be found in the "TIL" doc: https://
 - [x] Validating Props with PropTypes
 - [x] The Component Lifecycle
 - [x] Handling Form State
-- [x] Composition with children
-- [x] Building Reusable Components
-- [x] Code Sharing
-- [x] Bypassing Props with Context
+- [ ] Composition with children
+- [ ] Building Reusable Components
+- [ ] Code Sharing
+- [ ] Bypassing Props with Context
 - [ ] React Router v4
 - [ ] Better Classes with Class Fields
 - [ ] Performance Gains with Code Splitting
