@@ -4,6 +4,20 @@ This file will contain a daily log of things I learned on a particular day. This
 
 ---
 
+
+## 2021-03-09 - 2021-03-09, Tuesday and Wednesday
+
+Created another set of components in the "Learn React" project, all living under a main "Battle" component.
+
+Question: I wonder how the author of the course decided which components should be class-based vs functional. It seems the "big" component is a class, and the components that live under it are functional. I suspect it has something to do with state management needs.
+
+Further along in the project, we're introducing form elements. State is handled differently in forms. Form state lives in the DOM, which is different from regular React component state, which lives in the component. 
+
+> With “Controlled Components”, you do things the “React way”. The form state lives inside of the component’s state and the value of the input field is whatever the value on the component state is. If you want to update the input field, you have to update the component state.
+
+> “Uncontrolled Components” are the opposite. You don’t have any component state and instead, the form state lives inside of the DOM (or the input) field. Then, whenever you need to get the state, you grab it from the DOM.
+
+General recommendation is to use Controlled Components. One big reason: if you want to update the UI based on a piece of form state, you need to use Controlled components or else the UI won’t update.
 ## 2021-03-08, Monday
 
 Spent some time reading through the official React documentation (https://reactjs.org/docs)—specifically the "step-by-step" guide that walks through each concept in depth. Most of it was review, but I stumbled on some pieces of info that wasn't covered in the ui.dev course:
