@@ -44,3 +44,7 @@ A more detailed log of my daily progress can be found in the "TIL" doc: https://
 
 - [ ] Eloquent JavaScript (chapters on JavaScript and the Browser)
 - [ ] Official React Documentation
+
+## Potential Projects to Supplement Learning
+
+- [ ] Retry Github assignment from frontend engineer take-home interview project (https://github.com/zapier-interviews/interview-jvaz11-21769acfd4ef45d9aed27cec256c546b/blob/project/PROJECT_SPEC.md)

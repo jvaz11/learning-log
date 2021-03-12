@@ -4,8 +4,14 @@ This file will contain a daily log of things I learned on a particular day. This
 
 ---
 
+## 2021-03-11, Thursday
 
-## 2021-03-09 - 2021-03-09, Tuesday and Wednesday
+To answer my own question from the last post, I found this quote in a blog post: "Handling state was only doable in a class component until recently, but from React 16.8, React Hook useState was introduced to allow developers to write stateful functional components." This is why the course is using class components in cases where state is needed. The course is deliberately covering "classic React" concepts first before going into more modern tools and patterns, so this makes sense.
+
+I worked through the first part of the project that builds out the "battle" functionality, which takes two Github usernames from two fields and compares their stats. One tricky thing to keep in mind is that `onChange` and `onSubmit` accept function expressions. The project follows the "controlled components" pattern in that the value of an input field in a form is tied to state that lives in the class component. `onChange` must be set up to update the state, which thus causes a re-render. This means the value in the field is "going through the React tubes" in a way (that's how my brain remembers the flow/structure of the logic).
+
+When thinking about whether "something" should be a prop on a component, it's a good idea to avoid making something a prop if it can already be derived from other existing props. It doesn't make sense to add extra props that we then have to manage.
+## 2021-03-09 - 2021-03-10, Tuesday and Wednesday
 
 Created another set of components in the "Learn React" project, all living under a main "Battle" component.
 
