@@ -4,6 +4,10 @@ This file will contain a daily log of things I learned on a particular day. This
 
 ---
 
+## 2021-03-12, Friday
+
+
+
 ## 2021-03-11, Thursday
 
 To answer my own question from the last post, I found this quote in a blog post: "Handling state was only doable in a class component until recently, but from React 16.8, React Hook useState was introduced to allow developers to write stateful functional components." This is why the course is using class components in cases where state is needed. The course is deliberately covering "classic React" concepts first before going into more modern tools and patterns, so this makes sense.
