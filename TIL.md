@@ -3,6 +3,13 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+## 2021-03-15, Monday
+
+Continued to build out the "Battle" UI, starting with the cards for the winner and the loser of the battle. I'm noticing a pattern often used to conditionally render an element that relies on the logical `&&` operator ([screenshot](https://cdn.zappy.app/79c3d0071927392da1018aca2a629681.png) of an example).
+
+In JavaScript, when you have something like `somethingTruthy && anotherTruthyThing && expression`, the `expression` is conveniently evaluated. On the other hand, `somethingFalsy && expression` evaluates to `false`.
+
+`props.children` allows you to access the elements between the opening and closing tag of a component. This may come in handy when creating re-usable components.
 
 ## 2021-03-12, Friday
 
