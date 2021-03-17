@@ -3,6 +3,20 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+## 2021-03-16, Tuesday
+
+More progress on the "Battle" project in the React course. I abstracted the "player container" component and the "repo card" component into a generic "Card" component, which was an interesting exercise.
+
+As I suspected, the `props.children` keyword came in handy here. It allowed for "custom content" to be inserted inside an instance of the new, reusable `Card` component. `children` is used by setting it as one of the props in the component, and inserting it as an expression `{children}`.
+
+![](https://cdn.zappy.app/aa4bd0b7c626c4a628567a25616510c3.png)
+
+In the implementation of an instance, instead of using a single closed tag `<Card />`, use an opening and closing tag, `<Card>` and `</Card>`, and insert whatever "custom content/elements" you want in between these tags—this content will be referenced as `children` in the `Card` component.
+
+![](https://cdn.zappy.app/2524d437ef83e6304508b2fe72aee87b.png)
+
+Cool stuff today!
+
 ## 2021-03-15, Monday
 
 Continued to build out the "Battle" UI, starting with the cards for the winner and the loser of the battle. I'm noticing a pattern often used to conditionally render an element that relies on the logical `&&` operator ([screenshot](https://cdn.zappy.app/79c3d0071927392da1018aca2a629681.png) of an example).
