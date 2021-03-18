@@ -3,6 +3,14 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+## 2021-03-17, Wednesday
+
+Did a similar refactor as yesterday, this time with the "profile list" element. It made the code much more readable. I'm thinking this is part of the magic of React—abstracting elements into components, to then compose a UI from components within components within components with components. Very nice, Juan, good job. You're getting it! Why are you typing internal dialogue to yourself? It's just one of those days. Oh, ok.
+
+The next requirement in the project: add a "reset" button to the "Results" view, that will clear the state of the battle. But which state do we need to reset? At first I thought I should reset the state of the `Results` component, but it turns out we'll need to update the state of the `Battle` component. This is done by passing a function expression as a prop to the `Results` component which sets the state of the component back to the initial value, causing a re-render of the UI which follows the conditional logic in place for the respective components. Neat!
+
+On default props: setting default props allows props to have a value even when a value isn't explicitly set. In class components, you define defaults props similarly to propTypes, `MyComponent.defaultProps = { prop: defaultValue}`. Since function components are just functions, you can use the regular syntax for default parametersm, example: `function StarRating ({ color = '#ECB244' }) {}` 
+
 ## 2021-03-16, Tuesday
 
 More progress on the "Battle" project in the React course. I abstracted the "player container" component and the "repo card" component into a generic "Card" component, which was an interesting exercise.
