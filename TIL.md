@@ -3,6 +3,14 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+## 2021-03-23 and 2021-03-24, Tuesday and Wednesday
+
+I sometimes get the purpose of "props" vs. "state" mixed up. The key difference based on my current understanding is that state is specific and local to the component, while props are passed into the component wherever the component is being invoked for eventual rendering.
+
+The course is now discussing the concept of "Higher-Order Components". Similar to the concept of higher-order functions, which JavaScript supports, it's the idea that a component can accept a component and return a component that is transformed in some way. This is a tool and pattern we can use to make more powerful reusable components. This pattern is also seen in React router and React hooks. From the [docs](https://reactjs.org/docs/higher-order-components.html): "Whereas a component transforms props into UI, a higher-order component transforms a component into another component." One problem with higher-order components is that we trust them to pass a set of props to the wrapper component whenever it renders. There's an "inversion of control" that happens here, and we have to be careful to avoid naming collisions.
+
+The course continued with an interesting exercise: building a tooltip component that wraps around an element. I found it interesting that the tooltip component contains the "main" element, and not the other way around. The special `children` prop comes in handy here because without it, the "main" element doesn't show up.
+
 ## 2021-03-17, Wednesday
 
 Did a similar refactor as yesterday, this time with the "profile list" element. It made the code much more readable. I'm thinking this is part of the magic of React—abstracting elements into components, to then compose a UI from components within components within components with components. Very nice, Juan, good job. You're getting it! Why are you typing internal dialogue to yourself? It's just one of those days. Oh, ok.

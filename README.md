@@ -15,8 +15,8 @@ A more detailed log of my daily progress can be found in the "TIL" doc: https://
 - [x] Validating Props with PropTypes
 - [x] The Component Lifecycle
 - [x] Handling Form State
-- [ ] Composition with children
-- [ ] Building Reusable Components
+- [x] Composition with children
+- [x] Building Reusable Components
 - [ ] Code Sharing
 - [ ] Bypassing Props with Context
 - [ ] React Router v4
