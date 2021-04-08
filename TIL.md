@@ -3,6 +3,14 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+## 2021-04-07, Wednesday
+
+More fun with higher-order components! Using the hover logic already in `Tooltip.js`, we built a higher-order component (`withHover`) to decouple all the "hovering" and "unhovering" work. This component takes a `Component` as its argument, and conveniently returns a div with the "mouseOver" and "mouseOut" methods attached to it. The `Component` that was passed to it is rendered within this div.
+
+This was a bit mind-bendy, and I have a feeling there are likely newer, cleaner ways to implement similar functionality in React (perhaps the course will go over them later?). Whether that's true or not, it's neat to see how hovering functionality can be made reusable. 
+
+One key thing to consider is the way props need to be passed through from the "initial" component to the "higher-order component" (where it will exist as a wrapped component). Using object destructuring is the go-to convention here. Example: https://cdn.zappy.app/92fe017e2e8f51dcff348097288b693f.png
+
 ## 2021-03-23 and 2021-03-24, Tuesday and Wednesday
 
 I sometimes get the purpose of "props" vs. "state" mixed up. The key difference based on my current understanding is that state is specific and local to the component, while props are passed into the component wherever the component is being invoked for eventual rendering.
