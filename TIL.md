@@ -3,6 +3,40 @@
 This file will contain a daily log of things I learned on a particular day. This may include surprising new information, information I want to remember, new connections with existing knowledge, and other interesting tidbits.
 
 ---
+
+## 2021-06-14 - 2021-06-16, Monday - Wednesday
+
+I've been brushing up on Python concepts that I had either forgotten or learned. This course is great: https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+
+I didn't have a great handle on how class methods, inheritance, and subclassing worked, now I do.
+
+Some learning highlights:
+
+### @classmethod decorator
+The `@classmethod` decorator was one that showed up in the API client I was working with. This decorator changes a function within a class so that the class is passed in as the first argument (as opposed to the instance, `self`, like so:
+
+```python
+class MyClass:
+    def some_method(self, another_arg):
+        pass
+```    
+    
+Instead of `self`, the convention is to name the first argument `cls`, like so:
+
+```python
+class MyClass:
+    def some_class_method(cls, another_arg):
+        pass
+```
+
+### help() function 
+
+This function takes a class, and gives a lot of neat info about the class, including the Method Resolution Order, which lists any classes that are being inherited and the order in which it will try to resolve each method.
+
+Run `print(help(SomeClass))` to use it.
+
+Here's a screenshot from the course: https://cdn.zappy.app/c517f05afb2f96550716ca0669b4e441.png
+
 ## 2021-04-07, Wednesday
 
 More fun with higher-order components! Using the hover logic already in `Tooltip.js`, we built a higher-order component (`withHover`) to decouple all the "hovering" and "unhovering" work. This component takes a `Component` as its argument, and conveniently returns a div with the "mouseOver" and "mouseOut" methods attached to it. The `Component` that was passed to it is rendered within this div.
