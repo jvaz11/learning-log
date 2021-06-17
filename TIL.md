@@ -8,9 +8,9 @@ This file will contain a daily log of things I learned on a particular day. This
 
 I've been brushing up on Python concepts that I had either forgotten or learned. This course is great: https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
 
-I didn't have a great handle on how class methods, inheritance, and subclassing worked, now I do.
+I didn't have a great handle on how class methods, inheritance, and subclassing worked. Now I feel more confident about those things.
 
-Some learning highlights:
+The course covered a lot of ground and I didn't take notes for most of it, but here are some learning highlights from one of the videos I watched today:
 
 ### @classmethod decorator
 The `@classmethod` decorator was one that showed up in the API client I was working with. This decorator changes a function within a class so that the class is passed in as the first argument (as opposed to the instance, `self`, like so:
