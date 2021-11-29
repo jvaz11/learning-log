@@ -4,6 +4,28 @@ This file will contain a daily log of things I learned on a particular day. This
 
 ---
 
+## 2021-11-29 - Monday
+
+### Next.js learnings
+
+I'm going through the official next.js tutorial here: https://nextjs.org/learn/basics/create-nextjs-app
+
+Commit for today: https://github.com/jvaz11/learning-log/commit/6ea87c9f5e0efdf0713bd13c57b593edb92817d8
+
+## Routing
+- in next.js, a "page" is a react component exported as a file from the `pages` directory
+- the route where such a page can be accessed from is inferred from its `path + file name`. for example:
+    - `pages/index.js` can be viewed at `/`
+    - `pages/settings/account.js` can be viewed at `/settings/account`
+- the `Link` component from `next/link` allows you to link to pages under the next.js routing system. it's similar to using a regular HTML `<a>` tag, except that you have to wrap `<a>` tags in a `Link` component
+- next.js automatically prefetches a page linked to with `Link` when the link reaches the viewport of the browser (note that this only works in production)
+
+## Assets, Metadata, and CSS
+- assets can be saved in the top-level `pages` directory
+- the Image component from `next/image` is like the `<img>` element but with features for the modern web. for example:
+    - lazy loads images
+    - it sends appropriately sized images based on the user's viewport+device
+
 ## 2021-06-14 - 2021-06-16, Monday - Wednesday
 
 I've been brushing up on Python concepts that I had either forgotten or learned. This course is great: https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
